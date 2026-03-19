@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="model">
+  <link
+    name="BASE">
+    <inertial>
+      <origin
+        xyz="-0.00129603033686451 2.40449156949651E-05 0.0451413790751957"
+        rpy="0 0 0" />
+      <mass
+        value="1.4196647072716" />
+      <inertia
+        ixx="0.00529773769984953"
+        ixy="4.9007869744656E-07"
+        ixz="1.66497144554933E-05"
+        iyy="0.00530527559369084"
+        iyz="-2.16823450318064E-07"
+        izz="0.00754357999863531" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_test/meshes/BASE.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_test/meshes/BASE.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link
+    name="LINK1">
+    <inertial>
+      <origin
+        xyz="0.0152148142082725 -0.000152999566630729 0.244714790096053"
+        rpy="0 0 0" />
+      <mass
+        value="0.605410477093585" />
+      <inertia
+        ixx="0.00322884074035956"
+        ixy="1.85949151588894E-08"
+        ixz="-0.00054576191686217"
+        iyy="0.00350275968563406"
+        iyz="1.56352308577333E-10"
+        izz="0.000561768387703071" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_test/meshes/LINK1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_test/meshes/LINK1.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint
+    name="JOINT1"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="BASE" />
+    <child
+      link="LINK1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="10.0"
+      velocity="1.0" />
+  </joint>
+
+  <link
+    name="LINK2">
+    <inertial>
+      <origin
+        xyz="0.0790873349905498 4.58388894553907E-05 0.0204489489425965"
+        rpy="0 0 0" />
+      <mass
+        value="0.305451944816562" />
+      <inertia
+        ixx="7.49766887205307E-05"
+        ixy="1.63872069901147E-08"
+        ixz="3.37182849908452E-06"
+        iyy="0.000780622609915213"
+        iyz="-1.50510302979317E-08"
+        izz="0.00078236222807258" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_test/meshes/LINK2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_test/meshes/LINK2.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint
+    name="JOINT2"
+    type="revolute">
+    <origin
+      xyz="0.0582965292749975 -0.0193854022522395 0.335"
+      rpy="-1.57079632679489 -1.55344939025712 3.14159265358979" />
+    <parent
+      link="LINK1" />
+    <child
+      link="LINK2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="10.0"
+      velocity="1.0" />
+  </joint>
+
+  <link
+    name="LINK3">
+    <inertial>
+      <origin
+        xyz="0.0883597066904173 0.00108764702545189 0.0181919981195473"
+        rpy="0 0 0" />
+      <mass
+        value="0.283964812004773" />
+      <inertia
+        ixx="5.8917091883335E-05"
+        ixy="-1.50339639103369E-06"
+        ixz="3.42423910992835E-06"
+        iyy="0.000645568052851347"
+        iyz="8.94720838439392E-07"
+        izz="0.000653396818420617" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_test/meshes/LINK3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_test/meshes/LINK3.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint
+    name="JOINT3"
+    type="revolute">
+    <origin
+      xyz="0.146353540935907 5.92310139761604E-05 0"
+      rpy="3.14159265358979 0 -1.67191479762135" />
+    <parent
+      link="LINK2" />
+    <child
+      link="LINK3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="10.0"
+      velocity="1.0" />
+  </joint>
+
+  <ros2_control name="GazeboSimSystem" type="system">
+    <hardware>
+      <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+    </hardware>
+
+    <joint name="JOINT1">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="JOINT2">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="JOINT3">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+  </ros2_control>
+
+  <gazebo>
+    <plugin filename="libgz_ros2_control-system.so"
+            name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+      <parameters>__CONTROLLERS_FILE__</parameters>
+    </plugin>
+  </gazebo>
+</robot>
