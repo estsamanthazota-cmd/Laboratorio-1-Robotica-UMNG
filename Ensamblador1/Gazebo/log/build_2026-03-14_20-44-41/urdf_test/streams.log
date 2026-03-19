@@ -1,0 +1,30 @@
+[0.008s] Invoking command in '/home/schneider/ws_urdf/build/urdf_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/schneider/ws_urdf/build/urdf_test -- -j8 -l8
+[0.035s] Invoked command in '/home/schneider/ws_urdf/build/urdf_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/schneider/ws_urdf/build/urdf_test -- -j8 -l8
+[0.042s] Invoking command in '/home/schneider/ws_urdf/build/urdf_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/schneider/ws_urdf/build/urdf_test
+[0.047s] -- Install configuration: ""
+[0.047s] -- Execute custom install script
+[0.048s] -- Up-to-date symlink: /home/schneider/ws_urdf/install/urdf_test/share/urdf_test/launch/display.launch.py
+[0.048s] -- Up-to-date symlink: /home/schneider/ws_urdf/install/urdf_test/share/urdf_test/launch/gazebo.launch.py
+[0.048s] -- Up-to-date symlink: /home/schneider/ws_urdf/install/urdf_test/share/urdf_test/launch/rviz.launch.py
+[0.048s] -- Up-to-date symlink: /home/schneider/ws_urdf/install/urdf_test/share/urdf_test/urdf/model.urdf
+[0.048s] -- Up-to-date symlink: /home/schneider/ws_urdf/install/urdf_test/share/urdf_test/meshes/BASE.STL
+[0.048s] -- Up-to-date symlink: /home/schneider/ws_urdf/install/urdf_test/share/urdf_test/meshes/LINK1.STL
+[0.048s] -- Up-to-date symlink: /home/schneider/ws_urdf/install/urdf_test/share/urdf_test/meshes/LINK2.STL
+[0.048s] -- Up-to-date symlink: /home/schneider/ws_urdf/install/urdf_test/share/urdf_test/meshes/LINK3.STL
+[0.048s] -- Up-to-date symlink: /home/schneider/ws_urdf/install/urdf_test/share/urdf_test/config/controllers.yaml
+[0.048s] -- Up-to-date symlink: /home/schneider/ws_urdf/install/urdf_test/share/ament_index/resource_index/package_run_dependencies/urdf_test
+[0.049s] -- Up-to-date symlink: /home/schneider/ws_urdf/install/urdf_test/share/ament_index/resource_index/parent_prefix_path/urdf_test
+[0.049s] -- Up-to-date symlink: /home/schneider/ws_urdf/install/urdf_test/share/urdf_test/environment/ament_prefix_path.sh
+[0.049s] -- Up-to-date symlink: /home/schneider/ws_urdf/install/urdf_test/share/urdf_test/environment/ament_prefix_path.dsv
+[0.049s] -- Up-to-date symlink: /home/schneider/ws_urdf/install/urdf_test/share/urdf_test/environment/path.sh
+[0.049s] -- Up-to-date symlink: /home/schneider/ws_urdf/install/urdf_test/share/urdf_test/environment/path.dsv
+[0.049s] -- Up-to-date symlink: /home/schneider/ws_urdf/install/urdf_test/share/urdf_test/local_setup.bash
+[0.049s] -- Up-to-date symlink: /home/schneider/ws_urdf/install/urdf_test/share/urdf_test/local_setup.sh
+[0.049s] -- Up-to-date symlink: /home/schneider/ws_urdf/install/urdf_test/share/urdf_test/local_setup.zsh
+[0.049s] -- Up-to-date symlink: /home/schneider/ws_urdf/install/urdf_test/share/urdf_test/local_setup.dsv
+[0.049s] -- Symlinking: /home/schneider/ws_urdf/install/urdf_test/share/urdf_test/package.dsv
+[0.056s] -- Up-to-date symlink: /home/schneider/ws_urdf/install/urdf_test/share/ament_index/resource_index/packages/urdf_test
+[0.056s] -- Up-to-date symlink: /home/schneider/ws_urdf/install/urdf_test/share/urdf_test/cmake/urdf_testConfig.cmake
+[0.056s] -- Up-to-date symlink: /home/schneider/ws_urdf/install/urdf_test/share/urdf_test/cmake/urdf_testConfig-version.cmake
+[0.056s] -- Up-to-date symlink: /home/schneider/ws_urdf/install/urdf_test/share/urdf_test/package.xml
+[0.057s] Invoked command in '/home/schneider/ws_urdf/build/urdf_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/schneider/ws_urdf/build/urdf_test
