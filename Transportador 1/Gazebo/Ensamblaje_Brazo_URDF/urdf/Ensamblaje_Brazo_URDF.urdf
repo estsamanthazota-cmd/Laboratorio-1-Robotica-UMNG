@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Ensamblaje_Brazo_URDF">
+  <link
+    name="Llink_Base">
+    <inertial>
+      <origin
+        xyz="0 0 0.039271"
+        rpy="0 0 0" />
+      <mass
+        value="0.54885" />
+      <inertia
+        ixx="0.0017523"
+        ixy="3.7788E-20"
+        ixz="3.5061E-20"
+        iyy="0.0017453"
+        iyz="2.9011E-19"
+        izz="0.0013988" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje_Brazo_URDF/meshes/Llink_Base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje_Brazo_URDF/meshes/Llink_Base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link_Eslabon_1">
+    <inertial>
+      <origin
+        xyz="0.058329 -0.00010623 0.015274"
+        rpy="0 0 0" />
+      <mass
+        value="0.25927" />
+      <inertia
+        ixx="7.1859E-05"
+        ixy="-9.599E-07"
+        ixz="5.3089E-07"
+        iyy="0.00058728"
+        iyz="-9.2025E-07"
+        izz="0.00061596" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje_Brazo_URDF/meshes/Link_Eslabon_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje_Brazo_URDF/meshes/Link_Eslabon_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.15"
+      rpy="0 0 0" />
+    <parent
+      link="Llink_Base" />
+    <child
+      link="Link_Eslabon_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.8"
+      upper="1.8"
+      effort="10"
+      velocity="2" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="Link_Eslabon_2">
+    <inertial>
+      <origin
+        xyz="0.042257 -0.00012759 0.0088938"
+        rpy="0 0 0" />
+      <mass
+        value="0.24161" />
+      <inertia
+        ixx="6.5839E-05"
+        ixy="3.7933E-06"
+        ixz="1.4947E-06"
+        iyy="0.00045747"
+        iyz="2.3418E-07"
+        izz="0.00048065" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje_Brazo_URDF/meshes/Link_Eslabon_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje_Brazo_URDF/meshes/Link_Eslabon_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="revolute">
+    <origin
+      xyz="0.13001 0 0.041"
+      rpy="0 0 0" />
+    <parent
+      link="Link_Eslabon_1" />
+    <child
+      link="Link_Eslabon_2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.8"
+      upper="1.8"
+      effort="10"
+      velocity="2" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="Link_Prismatico">
+    <inertial>
+      <origin
+        xyz="-3.4641E-06 0.005787 -0.039514"
+        rpy="0 0 0" />
+      <mass
+        value="0.013143" />
+      <inertia
+        ixx="3.1998E-05"
+        ixy="2.1321E-10"
+        ixz="-8.172E-12"
+        iyy="3.2069E-05"
+        iyz="-1.4206E-09"
+        izz="1.9351E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje_Brazo_URDF/meshes/Link_Prismatico.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.94902 0.9098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje_Brazo_URDF/meshes/Link_Prismatico.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3"
+    type="prismatic">
+    <origin
+      xyz="0.12605 0.0075365 0.042788"
+      rpy="0 0 0" />
+    <parent
+      link="Link_Eslabon_2" />
+    <child
+      link="Link_Prismatico" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.1"
+      effort="20"
+      velocity="0.15" />
+    <dynamics
+      damping="0.5"
+      friction="0.5" />
+  </joint>
+  <link
+    name="Link_Gripper">
+    <inertial>
+      <origin
+        xyz="0.010901 0.029379 8.7874E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.021453" />
+      <inertia
+        ixx="4.892E-06"
+        ixy="4.5201E-08"
+        ixz="-9.1709E-11"
+        iyy="3.6629E-06"
+        iyz="2.0401E-12"
+        izz="3.4171E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje_Brazo_URDF/meshes/Link_Gripper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje_Brazo_URDF/meshes/Link_Gripper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4"
+    type="revolute">
+    <origin
+      xyz="0.0133 0.011 -0.13461"
+      rpy="-1.5708 0 3.1416" />
+    <parent
+      link="Link_Prismatico" />
+    <child
+      link="Link_Gripper" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-2.5"
+      upper="2.5"
+      effort="5"
+      velocity="2" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+</robot>
